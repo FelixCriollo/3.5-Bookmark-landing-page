@@ -1,0 +1,64 @@
+:root {
+  --soft-blue: hsl(231, 69%, 60%);
+  --soft-red: hsl(0, 94%, 66%);
+  --graylish-b: hsl(229, 8%, 60%);
+  --dark-blue: hsl(229, 31%, 21%);
+
+  --regular: 400;
+  --medium: 500;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: var(--regular);
+  color: var(--dark-blue);
+}
+main{
+  padding-top: 102px;
+}
+p {
+  color: var(--graylish-b);
+}
+button {
+  font-family: 'Rubik', sans-serif;
+  border: none;
+  background: transparent;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  color: var(--graylish-b);
+  padding-top: .7em;
+  padding-bottom: .7em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.btn--other {
+  background: var(--soft-blue);
+  color: #fff;
+  
+  &:hover {
+    color: #fff;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

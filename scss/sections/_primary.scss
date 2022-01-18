@@ -1,0 +1,17 @@
+.primary {
+  padding: 348px 1.25em 0 1.25em;
+  text-align: center;
+
+  &__title {
+    font-size: 1.9rem;
+  }
+  &__body {
+    margin: 1.5em 0 2.1em 0;
+    font-size: .99rem;
+  }
+}
+
+.primary-buttons {
+  display: flex;
+  justify-content: space-between;
+}
