@@ -11157,12 +11157,20 @@ button {
   background: transparent;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 .btn {
@@ -11193,6 +11201,7 @@ header {
   width: 100%;
   position: fixed;
   background: #fff;
+  z-index: 100;
 }
 
 .header {
@@ -11210,7 +11219,7 @@ header {
 .nav-list--active {
   position: absolute;
   display: block;
-  background: rgba(37, 43, 70, 0.95);
+  background: rgba(37, 43, 70, 0.9);
   width: 100%;
   height: 100vh;
   left: 0;
@@ -11251,7 +11260,7 @@ header {
 }
 
 .primary {
-  padding: 348px 1.25em 0 1.25em;
+  padding: 348px 1.25em 4em 1.25em;
   text-align: center;
 }
 .primary__title {
@@ -11265,6 +11274,67 @@ header {
 .primary-buttons {
   display: flex;
   justify-content: space-between;
+}
+
+.features {
+  padding-left: 1.35em;
+  padding-right: 1.35em;
+}
+.features__body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.feature-selector li {
+  border-top: 1px solid var(--graylish-b);
+}
+.feature-selector li:last-child {
+  border-bottom: 1px solid var(--graylish-b);
+}
+.feature-selector__item {
+  position: relative;
+  color: var(--graylish-b);
+  font-size: 1.1rem;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.feature-selector__item::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  width: 44%;
+  height: 3px;
+  transform: translateX(-50%);
+}
+.feature-selector__item:hover {
+  color: var(--dark-blue);
+  font-weight: 500;
+  transition: 0.3s all ease-in-out;
+}
+.feature-selector__item:hover::before {
+  background: var(--soft-red);
+  transition: 0.3s all ease-in-out;
+}
+.feature-selector__item--active {
+  color: var(--dark-blue);
+  font-weight: 500;
+  transition: 0.3s all ease-in-out;
+}
+.feature-selector__item--active::before {
+  background: var(--soft-red);
+  transition: 0.3s all ease-in-out;
+}
+
+.feature-info__title {
+  font-weight: 600;
+}
+.feature-info__body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.feature-info .feature__btn {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

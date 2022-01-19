@@ -2,6 +2,7 @@ header {
   width: 100%;
   position: fixed;
   background: #fff;
+  z-index: 100;
 }
 .header {
   position: relative;
@@ -20,7 +21,7 @@ header {
 .nav-list--active {
   position: absolute;
   display: block;
-  background: rgba($color: #252b46, $alpha: .95);
+  background: rgba($color: #252b46, $alpha: .9);
   width: 100%;
   height: 100vh;
   left: 0;
