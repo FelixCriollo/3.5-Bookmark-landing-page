@@ -1,0 +1,47 @@
+.download {
+  padding-right: 2em;
+  padding-left: 2em;
+
+  &__body {
+    font-size: .94rem;
+  }
+}
+
+.card-container {
+  .card {
+    border: none;
+    box-shadow: 0 5px 10px  rgba($color: rgb(211, 211, 211), $alpha: .8);
+    text-align: center;
+    margin-bottom: 3.5em;
+    border-radius: 20px;
+
+    &__img {
+      width: 36%;
+      margin: 1.5em auto 1em auto;
+    }
+
+    &__text {
+      font-size: .9rem;
+    }
+
+    .btn-primary {
+      margin-top: 1em;
+      width: 80%;
+      color: #fff;
+      background: var(--soft-blue);
+    }
+  }
+  
+  .card-body {
+    padding: 15px 0 15px 0;
+  }
+  
+  .card-btn-container {
+    background-image: linear-gradient(to right, var(--graylish-b) 33%, #fff 0%);
+    background-position: top;
+    background-size: 16px 4px;
+    background-repeat: repeat-x;
+    margin: 2em 0 0 0;
+    padding: .5em 0;
+  }
+}
