@@ -1,0 +1,30 @@
+.faq {
+  .faq-top {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  &__body {
+    font-size: .95rem;
+  }
+
+  .btn-primary {
+    width: 34%;
+    margin-top: 2em;
+  }
+}
+
+.accordion-item {
+  margin-bottom: .7em;
+  .accordion-button {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    font-size: .925rem !important;
+  }
+  
+  .show {
+    border: 1px solid var(--graylish-b);
+    padding-left: 0 !important;
+    text-align: left;
+    font-size: .925rem !important;
+  }
+}

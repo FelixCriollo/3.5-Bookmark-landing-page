@@ -1,0 +1,39 @@
+footer {
+  background-color: var(--dark-blue);
+}
+
+.footer {
+  &__logo {
+    width: 150px;
+  }
+  &__list {
+    padding: 2em 0 0 0;
+
+    li {
+      margin-bottom: 1.1em;
+    }
+  }
+  &__list-item {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.social-footer {
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+  margin: .5em auto;
+
+  &__item {
+    transition: all .3s ease-in-out;
+    
+    &:hover,
+    &:focus {
+      svg path {
+        fill: var(--soft-red);
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}

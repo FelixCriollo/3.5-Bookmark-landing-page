@@ -21,7 +21,7 @@
     position: relative;
     color: var(--graylish-b);
     font-size: 1.1rem;
-    transition: .3s all ease-in-out;
+    transition: .2s all ease-in-out;
     cursor: pointer;
 
     &::before {
@@ -37,11 +37,11 @@
     &:hover {
       color: var(--dark-blue);
       font-weight: 500;
-      transition: .3s all ease-in-out;
+      transition: .2s all ease-in-out;
     
       &::before {
         background: var(--soft-red);
-        transition: .3s all ease-in-out;
+        transition: .2s all ease-in-out;
       }
     }
 

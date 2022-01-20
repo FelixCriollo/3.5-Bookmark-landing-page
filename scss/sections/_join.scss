@@ -1,0 +1,68 @@
+.section-join {
+  background: var(--soft-blue);
+  color: #fff;
+  margin-top: 4.5em;
+}
+
+.join {
+  padding: 4em 1.4em 3em 1.4em;
+
+  &__sub-title {
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 4px;
+  }
+
+  &__title {
+    margin: .5em auto 1.3em auto;
+    font-size: 1.5rem;
+  }
+
+  &__email {
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+  &__email--error {
+    border: 3px solid var(--soft-red);
+  }
+
+  &__error {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    text-align: left;
+    padding: 0px 5px 0px 5px;
+    font-size: .7rem;
+    font-style: italic;
+  }
+  &__error--show {
+    color: #fff;
+    overflow: unset;
+    height: auto;
+  }
+  
+  &__btn {
+    color: #fff;
+    background: var(--soft-red);
+    margin-top: 1.4em;
+    width: 100%;
+  }
+
+}
+
+.join-email {
+  position: relative;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+
+  img {
+    position: absolute;
+    z-index: 10;
+    top: 14px;
+    right: 10px;
+    width: 20px;
+    visibility: hidden;
+  }
+}
