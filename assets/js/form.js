@@ -1,6 +1,4 @@
-const $btn = document.querySelector('.join__btn');
-
-$btn.addEventListener('click', (e) => {
+const formValid = (e) => {
   const $form = document.querySelector('form');
   const $input = $form.email;
   const $error = $form.children[0].children[1];
@@ -25,4 +23,6 @@ $btn.addEventListener('click', (e) => {
     $input.classList.remove("join__email--error")
     $errorSymbol.style.visibility = "hidden";
   })
-})
+}
+
+export default formValid;
