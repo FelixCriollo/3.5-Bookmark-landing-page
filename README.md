@@ -3,7 +3,7 @@
 # Welcome! 👋
 
 - In this project i use vanilla js sass and bootstrap. Also mobile first
-- For be honestly i use bootstrap for the accordion but then i use them in the mayor on mobile view
+- For be honestly i use bootstrap only for the accordion and maybe for the container and little more
 - Sorry for the rare code
 
 # Desktop design
