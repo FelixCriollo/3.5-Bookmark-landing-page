@@ -11331,7 +11331,19 @@ header {
   }
 }
 
+.primary-section {
+  background: url("/images/pill.svg") no-repeat;
+  background-position: 10px 16px;
+}
+@media (min-width: 992px) {
+  .primary-section {
+    background-size: 116%;
+    background-position: 840px 110px;
+  }
+}
+
 .primary {
+  position: relative;
   padding: 348px 1.25em 4em 1.25em;
   text-align: center;
 }
@@ -11341,6 +11353,11 @@ header {
 .primary__body {
   margin: 1.5em 0 2.1em 0;
   font-size: 0.99rem;
+}
+.primary__hero {
+  position: absolute;
+  left: 0;
+  top: 40px;
 }
 @media (min-width: 992px) {
   .primary {
@@ -11355,6 +11372,12 @@ header {
   .primary__body {
     margin: 1.5em 0 1.7em 0;
     font-size: 1.15rem;
+  }
+  .primary__hero {
+    left: unset;
+    right: 0;
+    top: 100px;
+    width: 550px;
   }
 }
 
@@ -11383,6 +11406,17 @@ header {
   }
 }
 
+.features-container {
+  background: url("/images/pill.svg") no-repeat;
+  background-position: -200px 410px;
+}
+@media (min-width: 992px) {
+  .features-container {
+    background-size: 122%;
+    background-position: -240px 310px;
+  }
+}
+
 .features {
   padding-left: 1.35em;
   padding-right: 1.35em;
@@ -11390,6 +11424,11 @@ header {
 .features__body {
   font-size: 0.95rem;
   line-height: 1.7;
+}
+@media (min-width: 992px) {
+  .features {
+    padding-bottom: 5em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -11508,6 +11547,7 @@ header {
   .feature-info .feature__btn {
     display: block;
     width: 120px;
+    border-color: var(--soft-blue);
   }
 }
 
@@ -11520,7 +11560,7 @@ header {
 }
 @media (min-width: 992px) {
   .download {
-    margin-top: 130px !important;
+    margin-top: 50px !important;
   }
   .download__body {
     margin: 1.5em auto;
@@ -11604,6 +11644,12 @@ header {
   .faq .btn-primary {
     width: 120px;
     margin-top: 2.4em;
+    border-color: var(--soft-blue);
+  }
+  .faq .btn-primary:hover, .faq .btn-primary:Focus {
+    border-color: var(--soft-blue);
+    background: var(--soft-blue);
+    color: #fff;
   }
 }
 

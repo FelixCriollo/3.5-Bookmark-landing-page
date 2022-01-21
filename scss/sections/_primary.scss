@@ -1,6 +1,17 @@
 @use '../config' as *;
 
+.primary-section {
+  background: url("/images/pill.svg") no-repeat;
+  background-position: 10px 16px;
+
+  @include desktop {
+    background-size: 116%;
+    background-position: 840px 110px;
+  }
+}
+
 .primary {
+  position: relative;
   padding: 348px 1.25em 4em 1.25em;
   text-align: center;
   
@@ -10,6 +21,12 @@
   &__body {
     margin: 1.5em 0 2.1em 0;
     font-size: .99rem;
+  }
+
+  &__hero {
+    position: absolute;
+    left: 0;
+    top: 40px;
   }
   
   @include desktop {
@@ -24,6 +41,12 @@
     &__body {
       margin: 1.5em 0 1.7em 0;
       font-size: 1.15rem;
+    }
+    &__hero {
+      left: unset;
+      right: 0;
+      top: 100px;
+      width: 550px;
     }
   }
 }

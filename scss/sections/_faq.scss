@@ -28,6 +28,13 @@
     .btn-primary {
       width: 120px;
       margin-top: 2.4em;
+      border-color: var(--soft-blue);
+
+      &:hover,&:Focus {
+        border-color: var(--soft-blue);
+        background: var(--soft-blue);
+        color: #fff;
+      }
     }
   }
 }
