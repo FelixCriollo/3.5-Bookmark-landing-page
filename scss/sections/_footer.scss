@@ -1,3 +1,5 @@
+@use '../config' as *;
+
 footer {
   background-color: var(--dark-blue);
 }
@@ -17,6 +19,39 @@ footer {
     color: #fff;
     text-transform: uppercase;
   }
+
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+    padding: 1em 7.3% 0 7.3% !important;
+
+    &__list {
+      display:  flex;
+      padding: 0;
+      margin-left: 3.5em;
+      margin-bottom: 0;
+      
+      li {
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+        
+        a:hover {
+          color: var(--soft-red);
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:not(:first-child) {
+          margin: 0;
+          margin-left: 2.5em;
+        }
+      }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-start;
+    }
+  }  
 }
 
 .social-footer {
@@ -36,4 +71,8 @@ footer {
       }
     }
   }
+
+  @include desktop {
+    margin-right: 0;
+  }  
 }

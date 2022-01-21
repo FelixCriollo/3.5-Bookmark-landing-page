@@ -1,3 +1,5 @@
+@use '../config' as *;
+
 .features {
   padding-left: 1.35em;
   padding-right: 1.35em;
@@ -5,6 +7,19 @@
   &__body {
     font-size: .95rem;
     line-height: 1.7;
+  }
+}
+
+.features-info {
+  @include desktop {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .features__body {
+      font-size: 1.12rem;
+      margin: 1em 0 2.1em 0;
+    }
   }
 }
 
@@ -56,6 +71,50 @@
       }
     }
   }
+
+  @include desktop {
+    width: 720px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3em .9em 3em;
+
+    li {
+      border-top: none;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:nth-child(2) {
+        margin-left: 4em;
+        margin-right: 5em;
+      }
+    }
+
+    &__item {
+      &::before {
+        top: 72px;
+        height: 4px;
+        width: 140%;
+      }
+    }
+  }
+}
+
+.feature-container {
+  @include desktop {
+    padding-left: 7%;
+    padding-right: 7.3%;
+    display: flex;
+    justify-content: space-between;
+
+    &__infography {
+      width: 50%;
+      max-width: 536px;
+    }
+  }
+
 }
 
 .feature-info {
@@ -68,5 +127,24 @@
   }
   .feature__btn {
     display: none;
+  }
+
+  @include desktop {
+    width: 435px;
+    padding-top: 3.8em !important;
+    text-align: left;
+    
+    &__title {
+      font-size: 2rem;
+    }
+    &__body {
+      font-size: 1.12rem;
+      margin: 1em 0 !important;
+    }
+
+    .feature__btn {
+      display: block;
+      width: 120px;
+    }
   }
 }

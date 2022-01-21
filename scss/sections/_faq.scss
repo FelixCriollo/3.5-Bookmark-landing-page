@@ -1,20 +1,40 @@
+@use '../config' as *;
+
 .faq {
   .faq-top {
     padding-left: 1em;
     padding-right: 1em;
   }
+  
   &__body {
     font-size: .95rem;
   }
-
+  
   .btn-primary {
     width: 34%;
     margin-top: 2em;
+  }
+  
+  @include desktop {
+    padding: 1.5em !important;
+    font-size: 1.3rem !important;
+    width: 630px;
+    
+    &__body {
+      font-size: 1.1rem;
+      margin-bottom: 1.7em !important;
+    }
+
+    .btn-primary {
+      width: 120px;
+      margin-top: 2.4em;
+    }
   }
 }
 
 .accordion-item {
   margin-bottom: .7em;
+
   .accordion-button {
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -26,5 +46,20 @@
     padding-left: 0 !important;
     text-align: left;
     font-size: .925rem !important;
+  }
+  
+  @include desktop {
+    .accordion-button {
+      font-size: 1.1rem !important;
+      font-weight: 500;
+
+      &:hover,&:focus {
+        color: var(--soft-red);
+      }
+    }
+    
+    .show {
+      font-size: 1.2rem !important;
+    }
   }
 }

@@ -1,7 +1,13 @@
+@use '../config' as *;
+
 .section-join {
   background: var(--soft-blue);
   color: #fff;
   margin-top: 4.5em;
+  
+  @include desktop {
+    margin-top: 6.5em;
+  }
 }
 
 .join {
@@ -48,6 +54,40 @@
     background: var(--soft-red);
     margin-top: 1.4em;
     width: 100%;
+  }
+
+  @include desktop {
+    padding-bottom: 4em;
+    width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .join-email {
+      width: 100%;
+    }
+
+    &__title {
+      margin: 1.5em auto .8em auto;
+      font-size: 2rem;
+    }
+
+    &__btn {
+      margin-top: 0;
+      margin-left: 1em;
+      width: 170px;
+      border-color: var(--soft-red);
+      
+      &:hover {
+        color: var(--soft-red);
+        border-color: var(--soft-red);
+        background: #fff;
+      }
+    }
+
+    form {
+      display: flex;
+      align-items: flex-start;
+    }
   }
 
 }

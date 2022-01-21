@@ -1,7 +1,9 @@
+@use '../config' as *;
+
 .primary {
   padding: 348px 1.25em 4em 1.25em;
   text-align: center;
-
+  
   &__title {
     font-size: 1.9rem;
   }
@@ -9,9 +11,45 @@
     margin: 1.5em 0 2.1em 0;
     font-size: .99rem;
   }
+  
+  @include desktop {
+    padding: 170px 1.25em 7em 7.3%;
+    text-align: left;
+    
+    &__title {
+      font-size: 2.95rem;
+      margin-bottom: 0;
+      line-height: 1.1;
+    }
+    &__body {
+      margin: 1.5em 0 1.7em 0;
+      font-size: 1.15rem;
+    }
+  }
+}
+
+.content-primary {
+  @include desktop {
+    width: 550px;
+  }
 }
 
 .primary-buttons {
   display: flex;
   justify-content: space-between;
+  
+  @include desktop {
+    display: flex;
+    justify-content: left;
+
+    .btn--other {
+      border-color: var(--soft-blue);
+      margin-right: 1em;
+
+      &:hover,&:Focus {
+        background: #fff;
+        color: var(--soft-blue);
+      }
+    }
+  }
 }
